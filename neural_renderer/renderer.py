@@ -157,6 +157,7 @@ class Renderer(nn.Module):
 
         # lighting
         faces_lighting = nr.vertices_to_faces(vertices, faces)
+        '''
         textures = nr.lighting(
             faces_lighting,
             textures,
@@ -165,7 +166,7 @@ class Renderer(nn.Module):
             self.light_color_ambient,
             self.light_color_directional,
             self.light_direction)
-
+        '''
         # viewpoint transformation
         if self.camera_mode == 'look_at':
             vertices = nr.look_at(vertices, self.eye)
