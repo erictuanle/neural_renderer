@@ -167,6 +167,8 @@ class Renderer(nn.Module):
             self.light_color_directional,
             self.light_direction)
         '''
+        import pdb
+        pdb.set_trace()
         # viewpoint transformation
         if self.camera_mode == 'look_at':
             vertices = nr.look_at(vertices, self.eye)
